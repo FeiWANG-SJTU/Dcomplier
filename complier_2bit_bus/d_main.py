@@ -1,9 +1,13 @@
+# main program of this DNA complier
+# user input: need a blank space after each word
+# by OL Jan. 12 , 2016
 import d_lexer1
 import d_parser
 import d_ast1
 import d_inte_gene
 import d_gene
-mypro=' for i = 1 : 3 i = i + 1 '
+mypro=input('Enter your program:')
+#print(mypro)
 tokens=d_lexer1.d_lex(mypro)
 
 root=d_ast1.tree('headers')

@@ -26,7 +26,7 @@ def iffor (tokens):
     strt=int(tokens[3][1])
     stp=int(tokens[5][1])
     body=tokens[6:]
-    print(type(stp))
+    #print(type(stp))
     nheader=d_ast1.For(strt, stp, condition_vari, body)
     return nheader
 def ifwhil(tokens):
